@@ -1,0 +1,100 @@
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* basic body styles */
+body {
+  font-family: "Inconsolata", monospace;
+  padding: 4% 10% 0 7%;
+}
+
+/* header part */
+
+header > p {
+  color: #333;
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+
+/* main content part */
+
+main > .container {
+  margin-top: 20%;
+  display: flex;
+}
+
+main > .container .image-part,
+main > .container .content-part {
+  width: 50%;
+}
+
+main > .container .image-part img {
+  width: 80%;
+}
+main > .container .content-part h1 {
+  color: var(--gray-1, #333);
+  font-family: "Inconsolata", monospace;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.24px;
+}
+main > .container .content-part p {
+  color: var(--gray-2, #4f4f4f);
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  margin: 5% 0 8%;
+}
+
+main > .container .content-part button {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.49px;
+  padding: 20px 30px;
+  background-color: var(--gray-1, #333);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 576px) {
+  body {
+    padding: 20px;
+  }
+  main > .container {
+    margin-top: 10%;
+    display: block;
+  }
+  main > .container .image-part,
+  main > .container .content-part {
+    width: 100%;
+  }
+  main > .container .content-part h1 {
+    color: var(--gray-1, #333);
+    font-family: "Inconsolata", monospace;
+    margin: 50px 0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.24px;
+  }
+
+
+}
