@@ -8,7 +8,7 @@
 /* basic body styles */
 body {
   font-family: "Inconsolata", monospace;
-  padding: 4% 10% 0 7%;
+  padding: 3% 10% 0 7%;
 }
 
 /* header part */
@@ -27,7 +27,8 @@ header > p {
 /* main content part */
 
 main > .container {
-  margin-top: 20%;
+  margin-top: 18%;
+  margin-bottom:18% ;
   display: flex;
 }
 
@@ -72,6 +73,27 @@ main > .container .content-part button {
   background-color: var(--gray-1, #333);
 }
 
+/* this is footer part */
+footer > p {
+  color: #bdbdbd;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer > p span {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 576px) {
   body {
@@ -95,6 +117,4 @@ main > .container .content-part button {
     line-height: normal;
     letter-spacing: -2.24px;
   }
-
-
 }
